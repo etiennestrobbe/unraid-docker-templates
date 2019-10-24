@@ -1,0 +1,78 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Beta>False</Beta>
+  <Category>Network:Management Tools:</Category>
+  <Date>2019-10-24</Date>
+  <Name>Feral-Routine</Name>
+  <Description>
+    [TODO]
+  </Description>
+  <Overview>
+    [TODO]
+  </Overview>
+  <Project>http://grafana.org/</Project>
+  <!-- <Support>https://lime-technology.com/forum/index.php?topic=51498.0</Support> -->
+  <Registry>https://hub.docker.com/r/etiennestrobbe/auto-dl-manager-feralroutine</Registry>
+  <GitHub>https://github.com/etiennestrobbe/AutoDLManager</GitHub>
+  <Repository>etiennestrobbe/auto-dl-manager-feralroutine:v1.4</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <!-- <Port>
+        <HostPort>3000</HostPort>
+        <ContainerPort>3000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port> -->
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>CONNECTION_STRING</Name>
+      <Value>Host=IP;Port=5432;Database=AutoDLManager;Username=XXX;Password=XXX</Value>
+    </Variable>
+    <Variable>
+      <Name>REMOTE_SERVER_HTTP_URL</Name>
+      <Value>http://url.com/links/</Value>
+    </Variable>
+    <Variable>
+      <Name>REMOTE_SERVER_URL</Name>
+      <Value>http://url.com:port</Value>
+    </Variable>
+    <Variable>
+      <Name>LOCAL_SERVER_URL</Name>
+      <Value>http://192.168.1.200:5555</Value>
+    </Variable>
+    <Variable>
+      <Name>MAX_DOWNLOAD</Name>
+      <Value>25</Value>
+    </Variable>
+    <Variable>
+      <Name>FERAL_PASS</Name>
+      <Value>XXXX</Value>
+    </Variable>
+    <Variable>
+      <Name>FERAL_USER</Name>
+      <Value>XXXX</Value>
+    </Variable>
+    <Variable>
+      <Name>FILE_TYPE_ID</Name>
+      <Value>1</Value>
+    </Variable>
+    <Variable>
+      <Name>DEST_FOLDER</Name>
+      <Value>Movies</Value>
+    </Variable>
+    <Variable>
+      <Name>REFRESH_VALUE</Name>
+      <Value>15000</Value>
+    </Variable>
+  </Environment>
+  
+  <!-- <WebUI>http://[IP]:[PORT:3000]/</WebUI> -->
+  <Banner></Banner>
+  <Icon>https://github.com/etiennestrobbe/unraid-docker-templates/raw/master/icons/rtorrent-arch-linux.png</Icon>
+  <ExtraParams></ExtraParams>
+</Containers>
