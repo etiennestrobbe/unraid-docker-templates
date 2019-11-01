@@ -14,7 +14,7 @@
   <!-- <Support>https://lime-technology.com/forum/index.php?topic=51498.0</Support> -->
   <Registry>https://hub.docker.com/r/etiennestrobbe/auto-dl-manager-feralroutine</Registry>
   <GitHub>https://github.com/etiennestrobbe/AutoDLManager</GitHub>
-  <Repository>etiennestrobbe/auto-dl-manager-feralroutine:v1.4</Repository>
+  <Repository>etiennestrobbe/auto-dl-manager-feralroutine:V1.4</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
