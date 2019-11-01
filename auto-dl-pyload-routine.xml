@@ -2,8 +2,8 @@
 <Containers>
   <Beta>False</Beta>
   <Category>Network:Management Tools:</Category>
-  <Date>2019-10-24</Date>
-  <Name>auto-dl-feral-routine</Name>
+  <Date>2019-11-01</Date>
+  <Name>auto-dl-pyload-routine</Name>
   <Description>
     [TODO]
   </Description>
@@ -12,9 +12,9 @@
   </Overview>
   <Project>http://grafana.org/</Project>
   <!-- <Support>https://lime-technology.com/forum/index.php?topic=51498.0</Support> -->
-  <Registry>https://hub.docker.com/r/etiennestrobbe/auto-dl-manager-feralroutine</Registry>
+  <Registry>https://hub.docker.com/r/etiennestrobbe/auto-dl-manager-pyloadroutine/Registry>
   <GitHub>https://github.com/etiennestrobbe/AutoDLManager</GitHub>
-  <Repository>etiennestrobbe/auto-dl-manager-feralroutine:V1.4</Repository>
+  <Repository>etiennestrobbe/auto-dl-manager-pyloadroutine:V1.0</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
@@ -33,32 +33,28 @@
       <Value>Host=IP;Port=5432;Database=AutoDLManager;Username=XXX;Password=XXX</Value>
     </Variable>
     <Variable>
-      <Name>REMOTE_SERVER_URL</Name>
-      <Value>http://url.com:port</Value>
+      <Name>REMOTE_SERVER_HTTP_URL</Name>
+      <Value>http://url.com/download/</Value>
+    </Variable>
+    <Variable>
+      <Name>PYLOAD_IP</Name>
+      <Value>192.168.1.200</Value>
     </Variable>
     <Variable>
       <Name>MAX_DOWNLOAD</Name>
       <Value>25</Value>
     </Variable>
     <Variable>
-      <Name>FERAL_PASS</Name>
-      <Value>XXXX</Value>
+      <Name>PYLOAD_USER</Name>
+      <Value>admin</Value>
     </Variable>
     <Variable>
-      <Name>FERAL_USER</Name>
-      <Value>XXXX</Value>
-    </Variable>
-    <Variable>
-      <Name>FILE_TYPE_ID</Name>
-      <Value>1</Value>
-    </Variable>
-    <Variable>
-      <Name>DEST_FOLDER</Name>
-      <Value>Movies</Value>
+      <Name>PYLOAD_PASS</Name>
+      <Value>password</Value>
     </Variable>
     <Variable>
       <Name>REFRESH_VALUE</Name>
-      <Value>15000</Value>
+      <Value>5000</Value>
     </Variable>
   </Environment>
   
