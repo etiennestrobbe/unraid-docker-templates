@@ -14,7 +14,7 @@
   <!-- <Support>https://lime-technology.com/forum/index.php?topic=51498.0</Support> -->
   <Registry>https://hub.docker.com/r/etiennestrobbe/auto-dl-manager-pyloadroutine</Registry>
   <GitHub>https://github.com/etiennestrobbe/AutoDLManager</GitHub>
-  <Repository>etiennestrobbe/auto-dl-manager-pyloadroutine:V1.0</Repository>
+  <Repository>etiennestrobbe/auto-dl-manager-pyloadroutine:V1.1</Repository>
   <BindTime>true</BindTime>
   <Privileged>true</Privileged>
   <Networking>
@@ -57,6 +57,28 @@
       <Value>5000</Value>
     </Variable>
   </Environment>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/Download/autodl</HostDir>
+      <ContainerDir>/downloads</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Shows</HostDir>
+      <ContainerDir>/TV</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Movies</HostDir>
+      <ContainerDir>/Movies</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/Alex</HostDir>
+      <ContainerDir>/Alex</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
   
   <!-- <WebUI>http://[IP]:[PORT:3000]/</WebUI> -->
   <Banner></Banner>
